@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c641b9269d593e4b8c6a3162df0b457, type: 3}
+  m_Name: StableDiffusionWebUISettings
+  m_EditorClassIdentifier: 
+  _stableDiffusionWebUIServerURL: http://127.0.0.1:7860
+  _modelsAPI: /sdapi/v1/sd-models
+  _textToImageAPI: /sdapi/v1/txt2img
+  _imageToImageAPI: /sdapi/v1/img2img
+  _optionAPI: /sdapi/v1/options
+  _pngInfoAPI: /sdapi/v1/png-info
+  _progressAPI: /sdapi/v1/progress
+  _cmdFlagsAPI: /sdapi/v1/cmd-flags
+  _controlNetVersionAPI: /controlnet/version
+  _controlNetModelListAPI: /controlnet/model_list
+  _controlNetModuleListAPI: /controlnet/module_list
+  _outputFolder: /StreamingAssets
+  _defaultSamplerIndex: 0
+  _defaultWidth: 512
+  _defaultHeight: 512
+  _defaultSteps: 40
+  _defaultCfgScale: 7
+  _defaultSeed: -1
+  _samplers:
+  - Euler a
+  - Euler
+  - LMS
+  - Heun
+  - DPM2
+  - DPM2 a
+  - DPM++ 2S a
+  - DPM++ 2M
+  - DPM++ SDE
+  - DPM fast
+  - DPM adaptive
+  - LMS Karras
+  - DPM2 Karras
+  - DPM2 a Karras
+  - DPM++ 2S a Karras
+  - DPM++ 2M Karras
+  - DPM++ SDE Karras
+  - DDIM
+  - PLMS
+  _modelNames:
+  - v1-5-pruned-emaonly
+  _modelNamesForLora:
+  - desktop
+  - JZCG001-Realistic natural scenery 1.0
+  - JZCG005-Realistic city photography 1.0
+  - vscharacter64-v1
+  - witchpot-icestage-sd-1-5
+  - witchpot_forest_dungeon
+  - witchpot_isometric_canal_city
+  - witchpot_topview_village
+  _controlNetModelNames:
+  - control_v11f1p_sd15_depth_fp16 [4b72d323]
+  - control_v11p_sd15_normalbae_fp16 [592a19d8]
+  _controlNetModuleNames:
+  - none
+  - canny
+  - depth
+  - depth_leres
+  - depth_leres++
+  - hed
+  - hed_safe
+  - mediapipe_face
+  - mlsd
+  - normal_map
+  - openpose
+  - openpose_hand
+  - openpose_face
+  - openpose_faceonly
+  - openpose_full
+  - clip_vision
+  - color
+  - pidinet
+  - pidinet_safe
+  - pidinet_sketch
+  - pidinet_scribble
+  - scribble_xdog
+  - scribble_hed
+  - segmentation
+  - threshold
+  - depth_zoe
+  - normal_bae
+  - oneformer_coco
+  - oneformer_ade20k
+  - lineart
+  - lineart_coarse
+  - lineart_anime
+  - lineart_standard
+  - shuffle
+  - tile_resample
+  - invert
+  - lineart_anime_denoise
+  - reference_only
+  - reference_adain
+  - reference_adain+attn
+  - inpaint
+  - inpaint_only
+  - inpaint_only+lama
+  - tile_colorfix
+  - tile_colorfix+sharp
