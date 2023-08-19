@@ -61,6 +61,7 @@ MonoBehaviour:
   - witchpot_forest_dungeon
   - witchpot_isometric_canal_city
   - witchpot_topview_village
+  - witchpot_top_canyon
   _controlNetModelNames:
   - control_v11f1p_sd15_depth_fp16 [4b72d323]
   - control_v11p_sd15_normalbae_fp16 [592a19d8]

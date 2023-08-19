@@ -14,6 +14,7 @@ public class CharacterMove : MonoBehaviour
     [SerializeField]
     private Camera m_FollowCamera = default;
 
+    //[SerializeField]
     private Transform m_CameraTransform = default;
 
     [SerializeField]
@@ -31,7 +32,7 @@ public class CharacterMove : MonoBehaviour
 
     private void Awake()
     {
-        m_CameraTransform = m_Camera.transform;
+        m_CameraTransform = m_FollowCamera.transform;
         m_CameraOffset = m_CameraTransform.position - gameObject.transform.position;
     }
 
@@ -61,6 +62,6 @@ public class CharacterMove : MonoBehaviour
 
     private void LateUpdate()
     {
-        //m_FollowCamera.transform.position = this.transform.position + m_CameraOffset;
+        m_FollowCamera.transform.position = this.transform.position + m_CameraOffset;
     }
 }
